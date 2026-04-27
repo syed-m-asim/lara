@@ -8,16 +8,17 @@ class FormController extends Controller
 {
     public function store(Requestc $request)
     {
-        asim::create([
-"name"=> $request->name,
-"email"=> $request->email,
-"password"=> $request->password,
-"cpassword"=>$request->cpassword,
+        khan::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => $request->password,
+            'cpassword' => $request->cpassword,
         ]);
-        return "data inserted";
+
+        return 'data inserted';
     }
-    public function index(){
-        $students = Student::all();
-        return view ('students', compact('students'));
-    }
+    // public function index(){
+    //     $students = Student::all();
+    //     return view ('students', compact('students'));
+    // }
 }
