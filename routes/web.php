@@ -8,3 +8,6 @@ Route::get('/', function () {
 });
 
 Route::post('/subission',[FormController::class, 'store']);
+Route::get('/dataget',[FormController::class, 'index']);
+
+

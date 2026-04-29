@@ -3,10 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\khan;
 
 class FormController extends Controller
 {
-    public function store(Requestc $request)
+    public function store(Request $request)
     {
         khan::create([
             'name' => $request->name,
@@ -17,8 +18,8 @@ class FormController extends Controller
 
         return 'data inserted';
     }
-    // public function index(){
-    //     $students = Student::all();
-    //     return view ('students', compact('students'));
-    // }
+  public function index(){
+    $students = khan::all();
+    return view('data', compact('students'));
+    }
 }

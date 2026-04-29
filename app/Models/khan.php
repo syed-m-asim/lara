@@ -9,6 +9,6 @@ class khan extends Model
 {
     use HasFactory;
 
-    protected $table = "asim";
+    protected $table = "std";
     protected $fillable =['name','email','password','cpassword'];
 }
