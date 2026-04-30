@@ -3,12 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\khan;
 
 class FormController extends Controller
 {
-    public function store(Requestc $request)
+    public function store(Request $request)
     {
-        khan::create([
+       khan::create([
             'name' => $request->name,
             'email' => $request->email,
             'password' => $request->password,
