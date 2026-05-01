@@ -19,7 +19,7 @@ class FormController extends Controller
         return 'data inserted';
     }
   public function index(){
-    $students = khan::all();
-    return view('data', compact('students'));
+    $get = khan::all();
+    return view('data', compact('get'));
     }
 }

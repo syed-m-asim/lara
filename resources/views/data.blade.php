@@ -12,8 +12,8 @@
 <tr>
 <th>Id</th>
 <th>Name</th>
-<th>Email</th>
-<th>Age</th>
+<th>Password</th>
+<th>Confirm Password</th>
 </tr>
 
 @foreach ( $get as $studentdata)
